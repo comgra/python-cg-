@@ -1,0 +1,11 @@
+import matplotlib.pyplot as plt   
+plt.figure(figsize=(4,4) )                     
+plt.plot([1, 4], [1, 4])          
+circle = plt.Circle((2, 2), 1, fill=False)   
+plt.gca().add_patch(circle)  
+rect = plt.Rectangle((4, 1), 2, 1, fill=False)   
+plt.gca().add_patch(rect)        
+triangle = plt.Polygon([[1,1], [2,3], [3,1]], fill=False)   
+plt.gca().add_patch(triangle)     
+plt.axis('equal')                
+plt.show()
